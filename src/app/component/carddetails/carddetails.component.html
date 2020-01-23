@@ -1,0 +1,25 @@
+ <h3>Card Details</h3>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Serial Number</th>
+                            <th scope="col">Card Number</th>
+                            <th scope="col">Card Type</th>
+                            <th scope="col">Bank Name</th>
+                            <th scope="col">Platform</th>
+                            <th scope="col">Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let cards of carddata">
+                            <th scope="row">{{cards.id}}</th>
+                            <td>{{cards.cardNumber}}</td>
+                            <td>{{cards.cardType}}</td>
+                            <td>{{cards.bankName}}</td>
+                            <td>{{cards.platform}}</td>
+                            <td>{{cards.active}}</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            

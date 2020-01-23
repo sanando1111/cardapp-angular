@@ -1,0 +1,17 @@
+<form (ngSubmit)="submit()">
+
+  <label for="products">Select Products   </label>
+  <select (change)="onChangeProductName($event.target.value)">
+    <option *ngFor="let summary of summaries; let i = index" [value]="summary">
+      {{summary}}
+    </option>
+  </select>
+  <br><br>
+  Declared Amount:<input type="text" name="declaredAmount" [value]="productDetail.declaredAmount">
+  <br/>
+  <br/>
+  Actual Amount:<input type="text" name="actualAmount" [value]="productDetail.actualAmount">
+  <br/>
+  <br/>
+  <button>submit</button>
+</form>
